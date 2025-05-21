@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Jogo da Velha</h1>
+    </header>
+    <main>
+      <section class="namePlayers" id="namePlayers">
+        <h2>Nome dos Jogadores</h2>
+        <div id="players">
+          <div class="divPlayerOne">
+            <label for="playerOne">Nome:</label>
+            <input
+              type="text"
+              id="playerOne"
+              name="playerOne"
+              placeholder="Jogador 1"
+            />
+          </div>
+          <div class="divPlayerTwo">
+            <label for="playerTwo">Nome:</label>
+            <input
+              type="text"
+              id="playerTwo"
+              name="playerTwo"
+              placeholder="Jogador 2"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="startGame">
+        <button class="btn-start" id="btn-start">Jogar</button>
+      </section>
+      <section class="message">
+        <h3 id="message"></h3>
+      </section>
+      <section class="board">
+        <button class="btn-board" data-row="0" data-col="0"></button>
+        <button class="btn-board" data-row="0" data-col="1"></button>
+        <button class="btn-board" data-row="0" data-col="2"></button>
+
+        <button class="btn-board" data-row="1" data-col="0"></button>
+        <button class="btn-board" data-row="1" data-col="1"></button>
+        <button class="btn-board" data-row="1" data-col="2"></button>
+
+        <button class="btn-board" data-row="2" data-col="0"></button>
+        <button class="btn-board" data-row="2" data-col="1"></button>
+        <button class="btn-board" data-row="2" data-col="2"></button>
+      </section>
+    </main>
+  </body>
+</html>
